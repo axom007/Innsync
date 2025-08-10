@@ -1,0 +1,2 @@
+id,hotel_id,room_id,booking_id,source,checkin_ts,checkout_ts
+817fc3b8-e46f-481f-a1b1-29cb2cc19940,cf6f590b-0877-469c-b8cb-b2c13b19edf6,13c34176-49b4-418e-9a44-18ba926df791,2e175996-4008-4a56-9bb0-a3544db5f089,OTA,2025-08-08T08:00:00+05:30,

@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: innsync
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports: ["5432:5432"]
+    volumes: [ "dbdata:/var/lib/postgresql/data" ]
+  adminer:
+    image: adminer
+    restart: always
+    ports: ["8081:8080"]
+    depends_on: [db]
+  api:
+    build: ./backend
+    environment:
+      PGHOST: db
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: innsync
+      PGPORT: 5432
+      TZ: Asia/Kolkata
+      NODE_ENV: production
+    ports: ["3000:3000"]
+    depends_on: [db]
+    volumes: [ "./data:/app/data:ro" ]
+  web:
+    build: ./frontend
+    ports: ["8080:80"]
+    environment: [ "API_BASE=http://localhost:3000" ]
+    depends_on: [api]
+volumes:
+  dbdata:

@@ -1,0 +1,4 @@
+id,hotel_id,room_id,channel,guest_name,checkin_ts,checkout_ts,status,price,currency
+2e175996-4008-4a56-9bb0-a3544db5f089,cf6f590b-0877-469c-b8cb-b2c13b19edf6,13c34176-49b4-418e-9a44-18ba926df791,OTA,Priya R,2025-08-08T10:00:00+05:30,2025-08-10T10:00:00+05:30,checked_in,4200,INR
+fecefff9-0ba6-43c3-b6b1-07fdc1a656d0,cf6f590b-0877-469c-b8cb-b2c13b19edf6,3cf2648b-1e12-4109-984d-5e546eeedb04,Direct,S. Dutta,2025-08-09T11:30:00+05:30,2025-08-10T10:00:00+05:30,booked,3200,INR
+9ec064a3-6781-4106-a9c3-b16b56612354,cf6f590b-0877-469c-b8cb-b2c13b19edf6,87564b5b-6db7-49e7-ad1a-5ff0bc4f36a1,OTA,Rahul K,2025-08-09T13:00:00+05:30,2025-08-11T10:00:00+05:30,booked,4200,INR

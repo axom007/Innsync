@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>InnSync PMS – UI</title>
+</head>
+
+<body>
+    <h2>InnSync PMS UI</h2>
+    <p>This Nginx-served UI is ready. Replace with your landing page later.</p>
+    <script>fetch('http://localhost:3000/health').then(r => r.json()).then(j => { const p = document.createElement('pre'); p.textContent = 'API /health: ' + JSON.stringify(j); document.body.appendChild(p); });</script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "innsync-api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "express": "^4.18.3",
+    "pg": "^8.11.3"
+  }
+}
